@@ -1,0 +1,57 @@
+#	Open github
+#	create reposatory (public)
+-----------------------------------------------------------------------------------------------------------------
+#	Create personal folder on the machine
+-----------------------------------------------------------------------------------------------------------------
+#	if .json file is not given by sir then
+	go inside the cloned folder and open cmd and type
+	"npm install express"
+	create .gitignore text file of all type(in text file add folder name which is to be ingnore)
+-----------------------------------------------------------------------------------------------------------------
+#	Open command prompt from the current folder 
+#	git clone <Path of the repo>
+#	cd <Repo folder name>
+-----------------------------------------------------------------------------------------------------------------
+#	Copy all files given by sir to the repo file
+----------------------------------------------------------------------------------------------------------------
+#	git add .
+#	git status
+#	git commit -m"add"
+#	git push
+-----------------------------------------------------------------------------------------------------------------
+	if we getting problem 403 in git push the delete all credential from control panel
+	control panel-->User account-->credential manager-->windows credential-->generic credential-->remove
+----------------------------------------------------------------------------------------------------------------
+#	go to git hub				//take a screenshot of commands of command prompt
+----------------------------------------------------------------------------------------------------------------
+#	Open AWS and login
+#	go to services-->compute-->ec2-->launch enstance-->Name-->select ubuntu-->create keyname-->allow http-->launch
+#	View all instances
+#	put the enstances on running state				//Take screenshot
+-----------------------------------------------------------------------------------------------------------------
+#	open putty
+	----set ip (Copy from AWS instance)
+	----data-->auto login username=ubuntu
+	----ssh-->auth-->credential=browse open downloaded key
+#	sudo apt update
+#	sudo apt install docker.io
+	y
+#	sudo docker pull nginx
+#	sudo docker images
+#	sudo docker run --name server -d -p 8080:80 nginx : latest
+#	sudo docker ps
+#	pwd
+#	git clone <path of the repo>
+#	ls
+#	cd <folder name>
+#	ls
+#	sudo docker built -t <folder name in which we are> .
+#	sudo docker images							//Screenshot
+#	sudo docker run --name ietweb -d -p 9000:9000 <git repo name>
+--------------------------------------------------------------------------------------------------------------------
+#	open chrome and paste enstance ip (http://ip:9000)
+	It will not work for this we have to set the security of the enstance
+--------------------------------------------------------------------------------------------------------------------
+#	open AWS -->security-->Security group-->inbound rule-->add rule-->all traffic-->anywhere-->save
+-------------------------------------------------------------------------------------------------------------------
+# 	open chrome and enter (http://ip:9000)		//Screenshot
